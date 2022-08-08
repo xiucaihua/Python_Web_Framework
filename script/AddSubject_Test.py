@@ -22,7 +22,7 @@ class AddSubject(unittest.TestCase):
         self.addSubject_verify("mainframe",u"项目管理2",u"新的标题",u"新的活动类型",u"这个是我新增加的描述","D:\\11.jpg",2)
         #print "返回的结果信息为：",result
         #self.assertEqual(result,"admin")
-        print "成功！"
+        print ("成功！")
 
 
 
