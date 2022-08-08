@@ -38,7 +38,7 @@ class BasePage():
             self.dr.get(url)
             log.info("打开"+url+LogMessage.Pass)
         except BaseException as msg:
-            print msg
+            print (msg)
 
 
 
@@ -50,7 +50,7 @@ class BasePage():
                 self.dr.quit()
                 log.info("关闭浏览器对象成功！")
         except BaseException as msg:
-            print msg
+            print (msg)
 
 
 
@@ -66,7 +66,7 @@ class BasePage():
             log.info("截图方法调用---成功！")
         except BaseException as msg:
             log.error("截图方法调用--失败！")
-            print msg
+            print (msg)
 
 
      #返回操作
@@ -95,7 +95,7 @@ class BasePage():
         try:
             sleep(time)
         except Exception as msg:
-            print msg
+            print (msg)
 
     # 获取当前的URL
     def ger_current_url(self):
