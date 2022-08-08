@@ -13,7 +13,7 @@ def readAll(filePath,mode):
         content = file.read()
         file.close()
     except BaseException as msg:
-        print msg
+        print (msg)
     finally:
         file.close()
     return content
@@ -29,7 +29,7 @@ def readLine(filePath,mode):
         file = open(filePath, mode)
         content = file.readline()
     except BaseException as msg:
-        print msg
+        print (msg)
     finally:
         file.close()
     return content
@@ -50,7 +50,7 @@ def write(filePath,mode,content):
     except BaseException as msg:
         raise  BaseException(content,"写入文件失败！")
     finally:
-        file.close()
+        f.close()
 
 
 """"
@@ -82,7 +82,7 @@ def readLinesOfNum(filePath, mode):
             value=lines.split(",")[0]
             value2=lines.split(",")[1]
     except BaseException as msg:
-        print msg
+        print (msg)
     finally:
         file.close()
     return value,value2
