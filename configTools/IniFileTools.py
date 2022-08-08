@@ -1,5 +1,5 @@
 #coding:utf-8
-import ConfigParser
+import configparser
 
 """
 判断是否有指定的selection名称
@@ -9,11 +9,11 @@ import ConfigParser
 """
 def has_section(iniFilePath,selectionName):
     try:
-        config = ConfigParser.ConfigParser()
+        config = configparser.ConfigParser()
         path = config.read(iniFilePath)
         result=config.has_section(selectionName)
     except BaseException as msg:
-        print msg
+        print (msg)
 
 """
 获取到指定select下的option对应的值
@@ -24,11 +24,11 @@ def has_section(iniFilePath,selectionName):
 """
 def getSelctionOfValue(iniFilePath,selectionName,optionName):
     try:
-        config = ConfigParser.ConfigParser()
+        config = configparser.ConfigParser()
         path = config.read(iniFilePath)
         result=config.get(selectionName,optionName)
     except BaseException as msg:
-        print msg
+        print (msg)
     return result
 
 """
@@ -39,12 +39,12 @@ def getSelctionOfValue(iniFilePath,selectionName,optionName):
  """
 def addSelections(iniFilePath,selectionName,mode):
     try:
-        config = ConfigParser.ConfigParser()
+        config = configparser.ConfigParser()
         path = config.read(iniFilePath)
         config.add_section(selectionName)
         config.write(open(iniFilePath, mode))
     except BaseException as msg:
-        print msg
+        print (msg)
 
 """
 增加指定select项下，key和value值
@@ -56,12 +56,12 @@ def addSelections(iniFilePath,selectionName,mode):
 """
 def addSelectOption(iniFilePath, selectionName,optionKey,optionValue,mode):
     try:
-        config = ConfigParser.ConfigParser()
+        config = configparser.ConfigParser()
         path = config.read(iniFilePath)
         config.set(selectionName,optionKey,optionValue)
         config.write(open(iniFilePath, mode))
     except BaseException as msg:
-        print msg
+        print (msg)
 
 """
 获取指定的select下面的所有的键值对信息
@@ -71,11 +71,11 @@ def addSelectOption(iniFilePath, selectionName,optionKey,optionValue,mode):
 """
 def getKey(iniFilePath,selectionName):
     try:
-        config = ConfigParser.ConfigParser()
+        config = configparser.ConfigParser()
         path = config.read(iniFilePath)
         list=config.options(selectionName)
     except BaseException as msg:
-        print msg
+        print (msg)
     return  list
 
 """
@@ -86,9 +86,9 @@ def getKey(iniFilePath,selectionName):
 """
 def getiteams(iniFilePath,selectionName):
     try:
-        config = ConfigParser.ConfigParser()
+        config = configparser.ConfigParser()
         config.read(iniFilePath)
         list=config.items(selectionName)
     except BaseException as msg:
-        print msg
+        print (msg)
     return  list
