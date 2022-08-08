@@ -40,7 +40,7 @@ class SubjectManger(BasePage):
         except BaseException as msg:
             log.error(LogMessage.findElement +"社区菜单" + LogMessage.Fail)
             self.get_screenshot_as_files(u"社区菜单_error.png")
-            print msg
+            print (msg)
 
     #主题管理
     def clickSubJectManger(self):
@@ -50,7 +50,7 @@ class SubjectManger(BasePage):
         except BaseException as msg:
             log.error(LogMessage.findElement + "主题管理" + LogMessage.Fail)
             self.get_screenshot_as_files(u"主题管理_error.png")
-            print msg
+            print (msg)
 
 
     # 切换到列表的ifram
@@ -62,7 +62,7 @@ class SubjectManger(BasePage):
         except BaseException as msg:
             log.error(LogMessage.findElement + "切换到列表的ifram" + LogMessage.Fail)
             self.get_screenshot_as_files(u"切换列表ifram_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -75,7 +75,7 @@ class SubjectManger(BasePage):
         except BaseException as msg:
             log.error(LogMessage.findElement + "添加主题按钮" + LogMessage.Fail)
             self.get_screenshot_as_files(u"添加主题按钮_error.png")
-            print msg
+            print (msg)
 
 
     #选择板块
@@ -87,7 +87,7 @@ class SubjectManger(BasePage):
         except BaseException as msg:
             #log.error("选择板块" + selectText + LogMessage.Fail)
             self.get_screenshot_as_files(u"选择板块_error.png")
-            print msg
+            print (msg)
 
 
     #标题
@@ -98,7 +98,7 @@ class SubjectManger(BasePage):
         except BaseException as msg:
             #log.error(u"输入标题：" + titleName + LogMessage.Fail)
             self.get_screenshot_as_files(u"标题_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -110,7 +110,7 @@ class SubjectManger(BasePage):
         except BaseException as msg:
             #log.error("输入活动类型：" + activeTypeName+ LogMessage.Fail)
             self.get_screenshot_as_files(u"活动类型_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -123,7 +123,7 @@ class SubjectManger(BasePage):
         except BaseException as msg:
             #log.error("设置简述：" + description + LogMessage.Fail)
             self.get_screenshot_as_files(u"设置简述_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -138,7 +138,7 @@ class SubjectManger(BasePage):
         except BaseException as msg:
             #log.error("上传图片：" + imagePath + LogMessage.Fail)
             self.get_screenshot_as_files(u"上传图片_error.png")
-            print msg
+            print (msg)
 
 
     #排序
@@ -149,7 +149,7 @@ class SubjectManger(BasePage):
         except BaseException as msg:
             #log.info(u"设置排序：" + orderNumber + LogMessage.Fail)
             self.get_screenshot_as_files(u"设置排序_error.png")
-            print msg
+            print (msg)
 
 
     #确认添加
@@ -160,4 +160,4 @@ class SubjectManger(BasePage):
         except BaseException as msg:
             #log.info(u"点击确认添加按钮：" + LogMessage.Fail)
             self.get_screenshot_as_files(u"确认添加_error.png")
-            print msg
+            print (msg)
