@@ -25,7 +25,6 @@ class LoginPage(BasePage):
         except BaseException as msg:
             log.error(LogMessage.findElement +username + LogMessage.Fail)
             self.get_screenshot_as_files(u"输入用户名.png")
-            print()
 
 
 
@@ -37,7 +36,7 @@ class LoginPage(BasePage):
         except BaseException as msg:
             log.error(LogMessage.findElement + password + LogMessage.Fail)
             self.get_screenshot_as_files(u"输入密码.png")
-            print msg
+            print (msg)
 
 
     # 点击登录按钮
@@ -48,7 +47,7 @@ class LoginPage(BasePage):
         except BaseException as msg:
             log.error("点击登录按钮失败！")
             self.get_screenshot_as_files(u"点击登录按钮.png")
-            print msg
+            print (msg)
 
 
 
