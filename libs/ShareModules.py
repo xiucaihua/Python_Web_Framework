@@ -209,4 +209,4 @@ def SendEmail(sender, psw, receiver, smtpserver, report_file, port):
     smtp.login(sender, psw)
     smtp.sendmail(sender, receiver, msg.as_string())
     smtp.quit()
-    print u'邮件发送成功！'
+    print (u'邮件发送成功！')
