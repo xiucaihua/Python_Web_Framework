@@ -51,7 +51,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + userName + LogMessage.Fail)
             self.get_screenshot_as_files(u"输入账号_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -63,7 +63,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + realName + LogMessage.Fail)
             self.get_screenshot_as_files(u"输入昵称_error.png")
-            print msg
+            print (msg)
 
 
     # 输入密码信息
@@ -74,7 +74,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + passWord + LogMessage.Fail)
             self.get_screenshot_as_files(u"输入密码_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -96,14 +96,14 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + roleName + LogMessage.Fail)
             self.get_screenshot_as_files(u"选择角色_error.png")
-            print msg
+            print (msg)
 
 
 
     # 选中明星
     def choseStart(self):
         if self.dr.find_element(*self.start_checkbox_loc).is_selected():
-            print u"角色已经被选中"
+            print (u"角色已经被选中")
         else:
             self.dr.find_element(*self.start_checkbox_loc).click()
 
@@ -118,7 +118,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + imagePath + LogMessage.Fail)
             self.get_screenshot_as_files(u"上传图片_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -130,7 +130,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + studentType + LogMessage.Fail)
             self.get_screenshot_as_files(u"设置学员类型_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -142,7 +142,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + studyTime + LogMessage.Fail)
             self.get_screenshot_as_files(u"设置学习时间_error.png")
-            print msg
+            print (msg)
 
 
     # 设置报名课程数
@@ -153,7 +153,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + studynum + LogMessage.Fail)
             self.get_screenshot_as_files(u"设置报名课程数_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -165,7 +165,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + category + LogMessage.Fail)
             self.get_screenshot_as_files(u"选择机构_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -177,7 +177,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + email + LogMessage.Fail)
             self.get_screenshot_as_files(u"设置邮箱_error.png")
-            print msg
+            print (msg)
 
 
     # 设置手机号码
@@ -188,7 +188,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + phone + LogMessage.Fail)
             self.get_screenshot_as_files(u"设置手机号码_error.png")
-            print msg
+            print (msg)
 
 
     # 地址选择
@@ -208,7 +208,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + provice+city+location+ LogMessage.Fail)
             self.get_screenshot_as_files(u"地址选择_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -220,7 +220,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + address + LogMessage.Fail)
             self.get_screenshot_as_files(u" 设置详细地址_error.png")
-            print msg
+            print (msg)
 
 
     # 设置个人简介
@@ -231,7 +231,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + introduce+ LogMessage.Fail)
             self.get_screenshot_as_files(u"设置个人简介_error.png")
-            print msg
+            print (msg)
 
 
 
@@ -243,7 +243,7 @@ class AddStudentPage(BasePage):
         except BaseException as msg:
             #log.error(LogMessage.findElement + self.true_sava_loc + LogMessage.Fail)
             self.get_screenshot_as_files(u"点击保存按钮_error.png")
-            print msg
+            print (msg)
 
 
 
