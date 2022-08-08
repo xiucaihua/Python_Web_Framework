@@ -21,7 +21,7 @@ class StudentListPage(BasePage):
         except BaseException as msg:
             #log.info(LogMessage.findElement + self.memberCenter_loc + LogMessage.Fail)
             self.get_screenshot_as_files("会员列表_error.png")
-            print msg
+            print (msg)
 
 
     # 点击添加学生
