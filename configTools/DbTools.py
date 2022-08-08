@@ -14,7 +14,7 @@ class DbTools:
     def getConnet(self,host,username,password,dbName,port=3305):
         try:
             conn = MySQLdb.connect(host, username, password, dbName,port)
-            print "连接数据库成功!"
+            print ("连接数据库成功!")
         except BaseException as msg:
             raise BaseException("数据库连接异常")
         return conn
@@ -36,9 +36,9 @@ class DbTools:
             curs.execute(sql)  # 执行数据库
 
             '''获取一条数据'''
-            print curs.fetchone()
+            print (curs.fetchone())
         except BaseException as msg:
-            print msg
+            print (msg)
         #return self.result
 
     # """
