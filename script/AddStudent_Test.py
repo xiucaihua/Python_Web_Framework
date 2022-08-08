@@ -19,7 +19,7 @@ class AddStudentTest(unittest.TestCase):
 
         self.addstudent_verify("13811012955", u"修才华", "123456", u"iOS开放", "D:\\11.jpg",
                                      u"新学员类型","2","3",u"河南科技大学","11988@Q.com","15711932121",u"天津市",u"市辖区",u"和平区",u"天津市河西区地址",u"这个是我的个人简介")
-        print "返回的结果信息为：添加学生信息成功！",
+        print ("返回的结果信息为：添加学生信息成功！")
         #self.assertEqual(msg,"admin")
 
 
@@ -54,4 +54,4 @@ class AddStudentTest(unittest.TestCase):
                 message="admin"
                 return message
             except BaseException as msg:
-                print msg
+                print (msg)
