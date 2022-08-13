@@ -1,0 +1,14 @@
+loginError1:
+  username: "sdfsfsdf"
+  password: "1121212"
+  result: "用户名或密码错误"
+
+loginError2:
+  username: "asdfgh2"
+  password: "asdfg"
+  result: "用户名或密码错误"
+
+loginError3:
+  username: "121233333"
+  password: "asdfgqawsd"
+  result: "用户名或密码错误"
